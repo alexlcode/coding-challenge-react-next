@@ -1,0 +1,43 @@
+
+.todo-item__status,
+.todo-item__position {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .todo-item {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .todo-item__actions {
+    opacity: 1;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .todo-item {
+    border-bottom: 2px solid var(--color-border);
+  }
+  
+  .todo-item__checkbox {
+    border-width: 3px;
+  }
+  
+  .todo-item__action-button {
+    border-width: 3px;
+  }
+  
+  .todo-item__text {
+    border: 1px solid transparent;
+  }
+  
+  .todo-item__text:focus {
+    border-color: var(--color-primary);
+  }
+}
