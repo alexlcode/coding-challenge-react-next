@@ -29,6 +29,37 @@
   --transition: all 0.2s ease-in-out;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text-contrast: #000;
+    --color-primary: #60a5fa;
+    --color-secondary: #94a3b8;
+    --color-background: #0f172a;
+    --color-surface: #1e293b;
+    --color-text: #f1f5f9;
+    --color-text-muted: #94a3b8;
+    --color-border: #334155;
+    --color-success: #34d399;
+    --color-danger: #f87171;
+    --color-warning: #fbbf24;
+  }
+}
+
+/* Manual dark theme override */
+.dark {
+  --color-text-contrast: #000;
+  --color-primary: #60a5fa;
+  --color-secondary: #94a3b8;
+  --color-background: #0f172a;
+  --color-surface: #1e293b;
+  --color-text: #f1f5f9;
+  --color-text-muted: #94a3b8;
+  --color-border: #334155;
+  --color-success: #34d399;
+  --color-danger: #f87171;
+  --color-warning: #fbbf24;
+}
+
 /* Reset and base styles */
 * {
   box-sizing: border-box;

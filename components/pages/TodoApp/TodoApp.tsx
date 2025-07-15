@@ -2,6 +2,7 @@ import React from 'react'
 import type { TodoItem } from '@/types/todo'
 import SearchInput from '@/components/ui/SearchInput'
 import TodoList from '@/components/ui/TodoList'
+import { ThemeToggle } from '@/components/ui/ThemeToggle'
 import './TodoApp.css'
 
 export type TodoAppProps = {
@@ -94,6 +95,7 @@ const TodoApp: React.FC<TodoAppProps> = ({
           Todo List
         </h1>
         {/* Theme toggle removed */}
+        <ThemeToggle />
       </header>
 
       <main 
